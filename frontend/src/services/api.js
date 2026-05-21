@@ -1,7 +1,2 @@
-import axios from 'axios'
-
-const API = axios.create({
-  baseURL: 'https://algoritmo-astar.onrender.com'
-})
-
-export default API
+// services/api.js
+export const API = 'https://algoritmo-astar.onrender.com'

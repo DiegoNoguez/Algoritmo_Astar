@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios'
+import {API} from './services/api'
 
 export default function App() {
 
@@ -128,7 +129,7 @@ export default function App() {
     try {
 
       const res = await axios.post(
-        'http://localhost:8000/resolver',
+        `${API}/resolver`,
         {
           costos
         }
